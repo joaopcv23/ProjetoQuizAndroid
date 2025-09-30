@@ -35,5 +35,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        txvPergunta =  findViewById(R.id.txvPergunta);
+        rdgPrincipal = findViewById(R.id.rdg_principal);
+        btnResponder = findViewById(R.id.btn_responder);
+
+
+       // carregarPerguntas();
     }
 }
