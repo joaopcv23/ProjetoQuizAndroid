@@ -42,4 +42,27 @@ public class MainActivity extends AppCompatActivity {
 
        // carregarPerguntas();
     }
+    private void carregarPerguntas(){
+        if(indicePergunta < perguntas.lenght){
+            //Pegar pergunta do vetor criado
+            txvPergunta. setText(perguntas[IndicePergunta]);
+            //Esvaziar marcação da radio caso haja
+            rdgPrincipal.clearCheck();
+            //Deixar o botão responder habilitado
+            btnResponder.setEnabled(true);
+        }else{
+            //Finalizar quiz
+            txvPergunta.setText("Fim");
+            // Desabilitar o botão de resposta
+            btnResponder.setEnabled(false);
+        }
+
+
+
+
+
+
+
+
+    }
 }
